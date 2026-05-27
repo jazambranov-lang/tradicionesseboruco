@@ -1,214 +1,233 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tradiciones de Seboruco — Voz de la Tradición Digital</title>
-  <meta name="description" content="Historia, cultura y tradiciones del municipio Seboruco, Estado Táchira, Venezuela. Proyecto estudiantil de preservación cultural digital." />
-
+  <meta name="description" content="Historia, cultura y tradiciones del municipio Seboruco, Estado Táchira, Venezuela."/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css?v=20260526">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/iglesia-hero.webp" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css?v=20260527">
 </head>
 <body>
 
-  <a class="skip-link" href="#main">Saltar al contenido</a>
+<a class="skip-link" href="#main">Saltar al contenido</a>
 
-  <!-- SPLASH -->
-  <div id="splash" aria-hidden="true">
-    <div class="splash-inner">
-      <div class="splash-cross">✦</div>
-      <p class="splash-text">Seboruco</p>
-    </div>
+<!-- SPLASH -->
+<div id="splash" aria-hidden="true">
+  <div class="splash-inner">
+    <span class="splash-church">⛪</span>
+    <p class="splash-text">Seboruco</p>
+    <p class="splash-sub">Historia · Cultura · Tradición</p>
   </div>
+</div>
 
-  <!-- NAV -->
-  <nav id="nav" role="navigation" aria-label="Navegación principal">
-    <div class="nav-inner">
-      <a href="#inicio" class="nav-brand">
-        <span class="nav-brand-icon">✦</span>
-        <span class="nav-brand-text">SEBORUCO</span>
-        <span class="nav-brand-sub">Historia · Cultura · Tradición</span>
-      </a>
-      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" role="list">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#historia">Historia</a></li>
-        <li><a href="#cultura">Cultura</a></li>
-        <li><a href="#tradiciones">Tradiciones</a></li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#proyecto">El Proyecto</a></li>
-      </ul>
+<!-- NAV -->
+<nav id="nav" role="navigation" aria-label="Navegación principal">
+  <div class="nav-inner">
+    <a href="#inicio" class="nav-brand">
+      <span class="nav-brand-icon">⛪</span>
+      <span class="nav-brand-text">SEBORUCO</span>
+      <span class="nav-brand-sub">Historia · Cultura · Tradición</span>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" role="list">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#historia">Historia</a></li>
+      <li><a href="#cultura">Cultura</a></li>
+      <li><a href="#tradiciones">Tradiciones</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#proyecto">El Proyecto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <img src="assets/img/iglesia-hero.webp" alt="Iglesia de San Pedro Apóstol, Seboruco, iluminada de noche" class="hero-img" fetchpriority="high" loading="eager"/>
+    <div class="hero-overlay-dark"></div>
+    <div class="hero-overlay-glow"></div>
+    <div class="hero-grain"></div>
+    <div class="hero-bar"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="hero-badge-dot"></span>
+        Municipio Seboruco · Estado Táchira · Venezuela
+      </div>
+      <h1 class="hero-title">
+        <span class="line reveal">Voz de la</span>
+        <em class="line reveal">tradición</em>
+        <span class="line reveal">a través de la</span>
+        <span class="line reveal blue-word">era digital</span>
+      </h1>
+      <p class="hero-desc reveal">Seboruco es memoria, es identidad, es legado. Este espacio digital nace para preservar nuestras raíces, celebrar lo que somos y compartirlo con el mundo.</p>
+      <div class="hero-ctas reveal">
+        <a href="#historia" class="btn btn-primary">Conoce nuestra historia</a>
+        <a href="#tradiciones" class="btn btn-ghost">▶ Explora tradiciones</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="hero-stat">
+          <span class="hero-stat-num">1778</span>
+          <p class="hero-stat-label">Año de fundación</p>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">10</span>
+          <p class="hero-stat-label">Tradiciones vivas</p>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">3</span>
+          <p class="hero-stat-label">Torres en su iglesia</p>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">4</span>
+          <p class="hero-stat-label">Nombres históricos</p>
+        </div>
+      </div>
     </div>
-  </nav>
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Explorar</span>
+      <div class="scroll-arrow">↓</div>
+    </div>
+  </section>
 
-  <main id="main">
-
-    <!-- HERO -->
-    <section id="inicio" class="hero">
-      <div class="hero-bg">
-        <div class="hero-gradient"></div>
-        <div class="hero-grain"></div>
+  <!-- HISTORIA -->
+  <section id="historia" class="section-historia">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-kicker reveal">✦ &nbsp; Historia</p>
+        <h2 class="section-title reveal">El <em>Pesebre</em> de los <span class="blue">Andes</span></h2>
       </div>
-      <div class="hero-content">
-        <p class="hero-kicker reveal">✦ &nbsp; Municipio Seboruco · Estado Táchira · Venezuela</p>
-        <h1 class="hero-title">
-          <span class="line reveal">Voz de la tradición</span>
-          <em class="line reveal">a través de la era digital</em>
-          <span class="line reveal">para la difusión de la</span>
-          <span class="line reveal accent-line">historia, cultura y tradiciones</span>
-        </h1>
-        <p class="hero-desc reveal">Seboruco es memoria, es identidad, es legado. Este espacio digital nace para preservar nuestras raíces, celebrar lo que somos y compartirlo con el mundo.</p>
-        <div class="hero-ctas reveal">
-          <a href="#historia" class="btn btn-primary">Conoce nuestra historia</a>
-          <a href="#tradiciones" class="btn btn-ghost">Explora tradiciones</a>
+      <div class="historia-grid">
+        <div class="historia-text">
+          <p class="lead reveal">Seboruco, conocido cariñosamente como la <strong>«Ciudad de los Cuatro Nombres»</strong> o el <strong>«Pesebre de los Andes»</strong>, es un municipio emblemático del estado Táchira, Venezuela.</p>
+          <p class="reveal">La historia de Seboruco hunde sus raíces en la resistencia de los indígenas Seborucos, pertenecientes a la gran familia de los <em>Timotocuicas</em>. El territorio fue históricamente un punto estratégico de paso entre el norte y el sur de los Andes venezolanos.</p>
+          <p class="reveal">Su fundación formal está ligada a un hecho civil y religioso ocurrido en <strong>1778</strong>, liderado por Enrique de Alonso y el párroco Francisco de Borja y Contreras, naciendo bajo el nombre oficial de <em>San Pedro de Seboruco</em>.</p>
+          <p class="reveal">La fertilidad de sus tierras lo convirtió en gran productor de <strong>café y caña de azúcar</strong>, consolidando un pueblo de calles empinadas, casas coloniales y un profundo arraigo católico, simbolizado en su imponente iglesia de tres torres dedicada a San Pedro Apóstol.</p>
         </div>
-      </div>
-      <div class="hero-scroll-hint" aria-hidden="true">
-        <span>Desplázate</span>
-        <div class="scroll-line"></div>
-      </div>
-    </section>
-
-    <!-- HISTORIA -->
-    <section id="historia" class="section-historia">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-kicker">✦ &nbsp; Historia</p>
-          <h2 class="section-title">El <em>Pesebre de los Andes</em></h2>
-        </div>
-        <div class="historia-grid">
-          <div class="historia-text">
-            <p class="lead reveal">Seboruco, conocido cariñosamente como la <strong>«Ciudad de los Cuatro Nombres»</strong> o el <strong>«Pesebre de los Andes»</strong>, es un municipio emblemático del estado Táchira.</p>
-            <p class="reveal">La historia de Seboruco hunde sus raíces en la resistencia de los indígenas Seborucos, pertenecientes a la gran familia de los Timotocuicas. El territorio fue históricamente un punto estratégico de paso entre el norte y el sur de los Andes venezolanos.</p>
-            <p class="reveal">Su fundación formal está ligada a un hecho civil y religioso ocurrido en <strong>1778</strong>, liderado por Enrique de Alonso y el párroco Francisco de Borja y Contreras, naciendo bajo el nombre oficial de <em>San Pedro de Seboruco</em>.</p>
-            <p class="reveal">La notable fertilidad de sus tierras lo convirtió en gran productor de <strong>café y caña de azúcar</strong>, atrayendo familias que consolidaron un pueblo de calles empinadas, hermosas casas coloniales y un profundo arraigo católico, simbolizado en su imponente iglesia de tres torres dedicada a San Pedro Apóstol.</p>
-          </div>
-          <div class="historia-visual reveal">
-            <div class="historia-card">
-              <div class="historia-card-img placeholder-img">
-                <div class="placeholder-content">
-                  <span class="placeholder-icon">⛪</span>
-                  <p>Iglesia de San Pedro Apóstol</p>
-                  <small>Foto próximamente</small>
-                </div>
-              </div>
-              <div class="historia-card-data">
-                <div class="dato"><span class="dato-num">1778</span><span class="dato-label">Año de fundación</span></div>
-                <div class="dato-divider"></div>
-                <div class="dato"><span class="dato-num">4</span><span class="dato-label">Nombres históricos</span></div>
-                <div class="dato-divider"></div>
-                <div class="dato"><span class="dato-num">3</span><span class="dato-label">Torres en su iglesia</span></div>
-              </div>
+        <div class="historia-visual reveal">
+          <div class="historia-card">
+            <img src="assets/img/iglesia-hero.webp" alt="Iglesia de San Pedro Apóstol de Seboruco" class="historia-church-img" loading="lazy"/>
+            <div class="historia-card-data">
+              <div class="dato"><span class="dato-num">1778</span><span class="dato-label">Fundación</span></div>
+              <div class="dato-divider"></div>
+              <div class="dato"><span class="dato-num">4</span><span class="dato-label">Nombres</span></div>
+              <div class="dato-divider"></div>
+              <div class="dato"><span class="dato-num">3</span><span class="dato-label">Torres</span></div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- CULTURA -->
-    <section id="cultura" class="section-cultura">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-kicker">✦ &nbsp; Cultura</p>
-          <h2 class="section-title">Identidad que <em>vive y vibra</em></h2>
-          <p class="section-desc reveal">La cultura seboruquense es una mezcla perfecta entre la herencia andina criolla, el fervor religioso y un fuerte sentido de vecindad y hospitalidad.</p>
-        </div>
-        <div class="cultura-grid" data-cultura></div>
-      </div>
-    </section>
-
-    <!-- TRADICIONES -->
-    <section id="tradiciones" class="section-tradiciones">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-kicker">✦ &nbsp; Tradiciones</p>
-          <h2 class="section-title">Diez tradiciones que <em>nos definen</em></h2>
-          <p class="section-desc reveal">Cada costumbre es un hilo del tejido comunitario de Seboruco. Aquí las preservamos para que nunca se pierdan.</p>
-        </div>
-        <div class="tradiciones-list" data-tradiciones></div>
-      </div>
-    </section>
-
-    <!-- GALERÍA -->
-    <section id="galeria" class="section-galeria">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-kicker">✦ &nbsp; Galería</p>
-          <h2 class="section-title">Imágenes de <em>nuestra tierra</em></h2>
-          <p class="section-desc reveal">Próximamente se incorporarán fotografías y videos de nuestras tradiciones y paisajes.</p>
-        </div>
-        <div class="galeria-grid">
-          <div class="galeria-item placeholder-img large reveal">
-            <div class="placeholder-content"><span class="placeholder-icon">🏔</span><p>Paisaje andino de Seboruco</p><small>Foto próximamente</small></div>
-          </div>
-          <div class="galeria-item placeholder-img reveal">
-            <div class="placeholder-content"><span class="placeholder-icon">🎊</span><p>Fiestas Patronales</p><small>Foto próximamente</small></div>
-          </div>
-          <div class="galeria-item placeholder-img reveal">
-            <div class="placeholder-content"><span class="placeholder-icon">🎵</span><p>Música tradicional</p><small>Foto próximamente</small></div>
-          </div>
-          <div class="galeria-item placeholder-img reveal">
-            <div class="placeholder-content"><span class="placeholder-icon">🍽</span><p>Gastronomía típica</p><small>Foto próximamente</small></div>
-          </div>
-          <div class="galeria-item placeholder-video reveal">
-            <div class="placeholder-content"><span class="placeholder-icon">▶</span><p>Video: Alboradas Navideñas</p><small>Video próximamente</small></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EL PROYECTO -->
-    <section id="proyecto" class="section-proyecto">
-      <div class="container">
-        <div class="proyecto-inner reveal">
-          <p class="section-kicker">✦ &nbsp; El Proyecto</p>
-          <h2 class="section-title">Un trabajo de <em>preservación cultural</em></h2>
-          <div class="proyecto-info">
-            <div class="proyecto-dato"><span class="pdato-label">Institución</span><span class="pdato-val">Colegio María Geralda Guerrero de Piñero</span></div>
-            <div class="proyecto-dato"><span class="pdato-label">Nivel</span><span class="pdato-val">Estudiantes de 5.º Año — Educación Media</span></div>
-            <div class="proyecto-dato"><span class="pdato-label">Año Escolar</span><span class="pdato-val">2025–2026</span></div>
-            <div class="proyecto-dato"><span class="pdato-label">Docente Tutor</span><span class="pdato-val">Prof. José Antonio Zambrano Villamizar</span></div>
-            <div class="proyecto-dato"><span class="pdato-label">Municipio</span><span class="pdato-val">Seboruco · Estado Táchira · Venezuela</span></div>
-          </div>
-          <p class="proyecto-cierre">Este proyecto nace del compromiso de jóvenes seboruquenses por preservar su identidad cultural en la era digital, construyendo un puente entre la memoria ancestral y las generaciones del futuro.</p>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
+  <!-- CULTURA -->
+  <section id="cultura" class="section-cultura">
     <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <span class="nav-brand-icon">✦</span>
-          <span>SEBORUCO</span>
-        </div>
-        <nav class="footer-nav" aria-label="Navegación footer">
-          <a href="#inicio">Inicio</a>
-          <a href="#historia">Historia</a>
-          <a href="#cultura">Cultura</a>
-          <a href="#tradiciones">Tradiciones</a>
-          <a href="#galeria">Galería</a>
-          <a href="#proyecto">El Proyecto</a>
-        </nav>
+      <div class="section-header">
+        <p class="section-kicker reveal">✦ &nbsp; Cultura</p>
+        <h2 class="section-title reveal">Identidad que <em>vive</em> y <span class="blue">vibra</span></h2>
+        <p class="section-desc reveal">La cultura seboruquense es una mezcla perfecta entre la herencia andina criolla, el fervor religioso y un fuerte sentido de vecindad y hospitalidad.</p>
       </div>
-      <div class="footer-bottom">
-        <p>© 2026 · Tradiciones de Seboruco · Proyecto estudiantil de preservación cultural digital</p>
-        <p>Colegio María Geralda Guerrero de Piñero · Municipio Seboruco · Estado Táchira · Venezuela</p>
+      <div class="cultura-grid" data-cultura></div>
+    </div>
+  </section>
+
+  <!-- TRADICIONES -->
+  <section id="tradiciones" class="section-tradiciones">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-kicker reveal">✦ &nbsp; Tradiciones</p>
+        <h2 class="section-title reveal">Diez tradiciones que <em>nos definen</em></h2>
+        <p class="section-desc reveal">Cada costumbre es un hilo del tejido comunitario de Seboruco. Aquí las preservamos para que nunca se pierdan.</p>
+      </div>
+      <div class="tradiciones-list" data-tradiciones></div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="galeria" class="section-galeria">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-kicker reveal">✦ &nbsp; Galería</p>
+        <h2 class="section-title reveal">Imágenes de <em>nuestra tierra</em></h2>
+        <p class="section-desc reveal">Próximamente incorporaremos fotografías y videos de nuestras tradiciones y paisajes.</p>
+      </div>
+      <div class="galeria-grid">
+        <div class="galeria-item large reveal">
+          <img src="assets/img/iglesia-hero.webp" alt="Iglesia de San Pedro Apóstol de noche" style="width:100%;height:100%;object-fit:cover;border-radius:14px;" loading="lazy"/>
+        </div>
+        <div class="galeria-item placeholder-img reveal">
+          <div class="placeholder-content"><span class="placeholder-icon">🏔</span><p>Paisaje andino</p><small>Foto próximamente</small></div>
+        </div>
+        <div class="galeria-item placeholder-img reveal">
+          <div class="placeholder-content"><span class="placeholder-icon">🎊</span><p>Fiestas Patronales</p><small>Foto próximamente</small></div>
+        </div>
+        <div class="galeria-item placeholder-img reveal">
+          <div class="placeholder-content"><span class="placeholder-icon">🎵</span><p>Música tradicional</p><small>Foto próximamente</small></div>
+        </div>
+        <div class="galeria-item placeholder-img reveal">
+          <div class="placeholder-content"><span class="placeholder-icon">🍽</span><p>Gastronomía típica</p><small>Foto próximamente</small></div>
+        </div>
+        <div class="galeria-item placeholder-video reveal">
+          <div class="placeholder-content"><span class="placeholder-icon">▶</span><p>Video: Alboradas Navideñas</p><small>Video próximamente</small></div>
+        </div>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <script defer src="lib/gsap.min.js"></script>
-  <script defer src="lib/ScrollTrigger.min.js"></script>
-  <script defer src="lib/manifest.js"></script>
-  <script defer src="main.js?v=20260526"></script>
+  <!-- EL PROYECTO -->
+  <section id="proyecto" class="section-proyecto">
+    <div class="container">
+      <div class="proyecto-inner reveal">
+        <p class="section-kicker">✦ &nbsp; El Proyecto</p>
+        <h2 class="section-title">Un trabajo de <em>preservación</em> <span class="blue">cultural</span></h2>
+        <div class="proyecto-info">
+          <div class="proyecto-dato"><span class="pdato-label">Institución</span><span class="pdato-val">Colegio María Geralda Guerrero de Piñero</span></div>
+          <div class="proyecto-dato"><span class="pdato-label">Nivel</span><span class="pdato-val">Estudiantes de 5.º Año — Educación Media General</span></div>
+          <div class="proyecto-dato"><span class="pdato-label">Año Escolar</span><span class="pdato-val">2025 – 2026</span></div>
+          <div class="proyecto-dato"><span class="pdato-label">Docente Tutor</span><span class="pdato-val">Prof. José Antonio Zambrano Villamizar</span></div>
+          <div class="proyecto-dato"><span class="pdato-label">Municipio</span><span class="pdato-val">Seboruco · Estado Táchira · Venezuela</span></div>
+        </div>
+        <p class="proyecto-cierre">Este proyecto nace del compromiso de jóvenes seboruquenses por preservar su identidad cultural en la era digital, construyendo un puente entre la memoria ancestral y las generaciones del futuro.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span>⛪</span>
+        <span>SEBORUCO</span>
+      </div>
+      <nav class="footer-nav" aria-label="Navegación footer">
+        <a href="#inicio">Inicio</a>
+        <a href="#historia">Historia</a>
+        <a href="#cultura">Cultura</a>
+        <a href="#tradiciones">Tradiciones</a>
+        <a href="#galeria">Galería</a>
+        <a href="#proyecto">El Proyecto</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 · Tradiciones de Seboruco · Proyecto estudiantil de preservación cultural digital</p>
+      <p>Colegio María Geralda Guerrero de Piñero · Municipio Seboruco · Estado Táchira · Venezuela</p>
+    </div>
+  </div>
+</footer>
+
+<script defer src="lib/gsap.min.js"></script>
+<script defer src="lib/ScrollTrigger.min.js"></script>
+<script defer src="lib/manifest.js"></script>
+<script defer src="main.js?v=20260527"></script>
 </body>
 </html>
