@@ -305,15 +305,54 @@
           <h2>Memorias visuales de Seboruco</h2>
           <p>Imágenes que acercan la historia, la fe, las fiestas y la vida comunitaria del pueblo.</p>
         </div>
-        <div class="gallery-grid reveal">
-          <figure><img src="assets/AGUINALDO.jpeg" alt="Aguinaldos y música tradicional en Seboruco"><figcaption>Aguinaldos y música</figcaption></figure>
-          <figure><img src="assets/bajadaniño1.png" alt="Detalle de la Bajada del Niño Jesús"><figcaption>Bajada del Niño Jesús</figcaption></figure>
-          <figure><img src="assets/carruchas1.png" alt="Participantes de la carrera de carruchas"><figcaption>Carrera de carruchas</figcaption></figure>
-          <figure><img src="assets/cruzmayo1.png" alt="Celebración de la Cruz de Mayo"><figcaption>Cruz de Mayo</figcaption></figure>
-          <figure><img src="assets/feriaseboruco1.png" alt="Fiestas y feria de Seboruco"><figcaption>Fiestas patronales</figcaption></figure>
-          <figure><img src="assets/palo1.png" alt="Participantes del Palo Encebado"><figcaption>Palo Encebado</figcaption></figure>
-          <figure><img src="assets/quemaañovieja.png" alt="Muñeco tradicional de Año Viejo"><figcaption>Año Viejo</figcaption></figure>
-          <figure><img src="assets/Alboradas.png" alt="Alboradas musicales navideñas"><figcaption>Alboradas</figcaption></figure>
+        <div class="coverflow-gallery reveal" aria-label="Carrusel de memorias visuales de Seboruco">
+          <button class="gallery-nav gallery-prev" type="button" aria-label="Ver imagen anterior">‹</button>
+
+          <div class="coverflow-stage" id="coverflowStage">
+            <figure class="coverflow-slide" data-title="Aguinaldos y música" data-image="assets/AGUINALDO.jpeg" data-alt="Aguinaldos y música tradicional en Seboruco">
+              <img src="assets/AGUINALDO.jpeg" alt="Aguinaldos y música tradicional en Seboruco">
+              <figcaption>Aguinaldos y música</figcaption>
+            </figure>
+            <figure class="coverflow-slide" data-title="Bajada del Niño Jesús" data-image="assets/bajadaniño1.png" data-alt="Detalle de la Bajada del Niño Jesús">
+              <img src="assets/bajadaniño1.png" alt="Detalle de la Bajada del Niño Jesús">
+              <figcaption>Bajada del Niño Jesús</figcaption>
+            </figure>
+            <figure class="coverflow-slide" data-title="Carrera de carruchas" data-image="assets/carruchas1.png" data-alt="Participantes de la carrera de carruchas">
+              <img src="assets/carruchas1.png" alt="Participantes de la carrera de carruchas">
+              <figcaption>Carrera de carruchas</figcaption>
+            </figure>
+            <figure class="coverflow-slide" data-title="Cruz de Mayo" data-image="assets/cruzmayo1.png" data-alt="Celebración de la Cruz de Mayo">
+              <img src="assets/cruzmayo1.png" alt="Celebración de la Cruz de Mayo">
+              <figcaption>Cruz de Mayo</figcaption>
+            </figure>
+            <figure class="coverflow-slide" data-title="Fiestas patronales" data-image="assets/feriaseboruco1.png" data-alt="Fiestas y feria de Seboruco">
+              <img src="assets/feriaseboruco1.png" alt="Fiestas y feria de Seboruco">
+              <figcaption>Fiestas patronales</figcaption>
+            </figure>
+            <figure class="coverflow-slide" data-title="Palo Encebado" data-image="assets/palo1.png" data-alt="Participantes del Palo Encebado">
+              <img src="assets/palo1.png" alt="Participantes del Palo Encebado">
+              <figcaption>Palo Encebado</figcaption>
+            </figure>
+            <figure class="coverflow-slide" data-title="Año Viejo" data-image="assets/quemaañovieja.png" data-alt="Muñeco tradicional de Año Viejo">
+              <img src="assets/quemaañovieja.png" alt="Muñeco tradicional de Año Viejo">
+              <figcaption>Año Viejo</figcaption>
+            </figure>
+            <figure class="coverflow-slide" data-title="Alboradas" data-image="assets/Alboradas.png" data-alt="Alboradas musicales navideñas">
+              <img src="assets/Alboradas.png" alt="Alboradas musicales navideñas">
+              <figcaption>Alboradas</figcaption>
+            </figure>
+          </div>
+
+          <button class="gallery-nav gallery-next" type="button" aria-label="Ver imagen siguiente">›</button>
+
+          <div class="gallery-dots" id="galleryDots" aria-label="Seleccionar imagen de la galería"></div>
+          <p class="gallery-hint">Haz clic en las imágenes laterales o usa las flechas para recorrer la galería.</p>
+        </div>
+
+        <div class="lightbox" id="galleryLightbox" aria-hidden="true" role="dialog" aria-label="Imagen ampliada de la galería">
+          <button class="lightbox-close" type="button" data-close-lightbox aria-label="Cerrar imagen ampliada">×</button>
+          <img id="lightboxImage" src="" alt="">
+          <p id="lightboxCaption"></p>
         </div>
       </div>
     </section>
