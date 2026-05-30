@@ -51,6 +51,7 @@ const modalDate = document.getElementById('modalDate');
 const modalDescription = document.getElementById('modalDescription');
 const modalRequirements = document.getElementById('modalRequirements');
 const modalImportance = document.getElementById('modalImportance');
+const modalImage = document.getElementById('modalImage');
 let lastFocusedElement = null;
 
 filterButtons.forEach((button) => {
@@ -74,6 +75,10 @@ function openTraditionModal(card) {
   modalDescription.textContent = card.dataset.description;
   modalRequirements.textContent = card.dataset.requirements;
   modalImportance.textContent = card.dataset.importance;
+  if (modalImage) {
+    modalImage.src = card.dataset.image || '';
+    modalImage.alt = card.dataset.imageAlt || card.dataset.title || 'Imagen de la tradición';
+  }
   traditionModal.classList.add('open');
   traditionModal.setAttribute('aria-hidden', 'false');
   document.body.classList.add('modal-open');

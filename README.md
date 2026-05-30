@@ -1,52 +1,40 @@
-# Seboruco | Historia, Cultura y Tradiciones
+# Sitio web cultural de Seboruco
 
-Proyecto web listo para publicar en GitHub Pages.
+Proyecto listo para GitHub Pages.
 
-## Archivos incluidos
+## Archivos principales
 
-- `index.html`: estructura de la página.
-- `styles.css`: diseño visual y estilos responsive.
-- `script.js`: menú móvil, animaciones, filtros de tradiciones y ventanas emergentes.
-- `assets/`: carpeta donde debe estar la imagen principal.
+- `index.html`
+- `styles.css`
+- `script.js`
+- `README.md`
 
-## Imagen principal
+## Imágenes necesarias en `assets/`
 
-La imagen de la iglesia debe estar en esta ruta exacta:
+Sube estas imágenes directamente dentro de la carpeta `assets/`, con los nombres exactos:
 
-```text
-assets/iglesia de seboruco.jpg
-```
+- `iglesia de seboruco.jpg` → imagen principal del hero.
+- `portadapesebre.jpg` → imagen de la sección “El Pesebre de los Andes”.
+- `pasoreyes.png` → El Paso de los Reyes Magos.
+- `carruchas.png` → La Carrera de Carruchas.
+- `palo.png` → El Palo Encebado.
+- `bajadaniño.png` → La Bajada del Niño Jesús.
+- `feriaseboruco.png` → Fiestas Patronales en honor a San Pedro Apóstol.
+- `ParaduraNiño.png` → La Paradura del Niño.
+- `cruzmayo.png` → El Velorio de la Cruz de Mayo.
+- `quemaañoviejo.png` → La Quema del Año Viejo.
+- `sardina.png` → El Entierro de la Sardina.
+- `Alboradas.png` → Las Alboradas Musicales Navideñas.
+- `AGUINALDO.jpeg`, `bajadaniño1.png`, `carruchas1.png`, `cruzmayo1.png`, `feriaseboruco1.png`, `palo1.png`, `quemaañovieja.png` → galería visual.
 
-Si decides cambiar el nombre de la imagen, también cambia la variable `--hero-image` en `styles.css`.
+## Importante
 
-## Tradiciones
+GitHub Pages distingue mayúsculas, minúsculas, espacios, eñes y acentos. Los nombres deben estar exactamente iguales a los usados en el código.
 
-La página incluye contenido ajustado al documento base: resumen de historia, cultura local y las 10 tradiciones principales de Seboruco en tarjetas interactivas. Cada tarjeta tiene un botón `Ver más` que abre una ventana con descripción, requerimientos e importancia cultural.
+## Publicación en GitHub Pages
 
-También se incluyeron filtros por categoría:
-
-- Todas
-- Religiosas
-- Navideñas
-- Populares
-- Carnavalescas
-
-## Publicar en GitHub Pages
-
-1. Sube todos los archivos a la raíz de tu repositorio.
-2. Crea o verifica la carpeta `assets`.
-3. Sube dentro de `assets` la imagen con el nombre exacto `iglesia de seboruco.jpg`.
-4. En GitHub entra en `Settings > Pages`.
-5. En `Branch`, selecciona `main` y carpeta `/root`.
-6. Guarda los cambios y espera unos minutos.
-
-
-## Imagen para la sección “El Pesebre de los Andes”
-
-Para que se vea la imagen lateral de la sección “Sobre Seboruco”, sube la fotografía con este nombre exacto dentro de la carpeta `assets`:
-
-```text
-assets/portadapesebre.jpg
-```
-
-Debe respetar mayúsculas, minúsculas y extensión. Si el archivo tiene otro nombre o extensión, actualiza la ruta en `index.html`.
+1. Sube todos los archivos a la raíz del repositorio.
+2. Crea la carpeta `assets`.
+3. Sube las imágenes dentro de `assets`.
+4. En GitHub entra a `Settings > Pages`.
+5. Selecciona la rama principal y guarda.
