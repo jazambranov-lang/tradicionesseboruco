@@ -39,3 +39,14 @@ También se incluyeron filtros por categoría:
 4. En GitHub entra en `Settings > Pages`.
 5. En `Branch`, selecciona `main` y carpeta `/root`.
 6. Guarda los cambios y espera unos minutos.
+
+
+## Imagen para la sección “El Pesebre de los Andes”
+
+Para que se vea la imagen lateral de la sección “Sobre Seboruco”, sube la fotografía con este nombre exacto dentro de la carpeta `assets`:
+
+```text
+assets/portadapesebre.jpg
+```
+
+Debe respetar mayúsculas, minúsculas y extensión. Si el archivo tiene otro nombre o extensión, actualiza la ruta en `index.html`.
