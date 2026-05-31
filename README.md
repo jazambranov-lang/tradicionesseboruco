@@ -41,3 +41,13 @@ GitHub Pages distingue mayúsculas, minúsculas, espacios, eñes y acentos. Los 
 3. Sube las imágenes dentro de `assets`.
 4. En GitHub entra a `Settings > Pages`.
 5. Selecciona la rama principal y guarda.
+
+
+## Redes sociales integradas
+
+La página incluye enlaces oficiales del proyecto en el menú superior, sección de redes, contacto y footer:
+
+- Instagram: https://www.instagram.com/vozdelatradicion/
+- TikTok: https://www.tiktok.com/@voz.de.la.tradicion
+
+Si más adelante cambian las cuentas, busca estas URLs en `index.html` y reemplázalas por las nuevas.
