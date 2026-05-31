@@ -26,6 +26,9 @@ Sube estas imágenes directamente dentro de la carpeta `assets/`, con los nombre
 - `sardina.png` → El Entierro de la Sardina.
 - `Alboradas.png` → Las Alboradas Musicales Navideñas.
 - `AGUINALDO.jpeg`, `bajadaniño1.png`, `carruchas1.png`, `cruzmayo1.png`, `feriaseboruco1.png`, `palo1.png`, `quemaañovieja.png` → galería visual.
+- `blog-memoria-oral.png` → imagen de la entrada Memoria oral.
+- `blog-gastronomia.png` → imagen de la entrada Gastronomía.
+- `blog-patrimonio.jpg` → imagen de la entrada Patrimonio.
 
 ## Importante
 

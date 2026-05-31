@@ -1629,3 +1629,56 @@ body.modal-open {
     display: none;
   }
 }
+
+/* Blog cultural con imágenes y ventana emergente */
+.blog-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-thumb img {
+  width: 100%;
+  height: 220px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.45s ease, filter 0.45s ease;
+}
+
+.blog-card:hover .blog-thumb img {
+  transform: scale(1.06);
+  filter: saturate(1.08) contrast(1.02);
+}
+
+.blog-read-more {
+  display: inline-flex;
+  margin-top: 0.6rem;
+  border: 0;
+  border-bottom: 2px solid rgba(92, 64, 51, 0.35);
+  background: transparent;
+  color: var(--earth);
+  font: inherit;
+  font-weight: 900;
+  cursor: pointer;
+  padding: 0 0 0.16rem;
+}
+
+.blog-read-more:hover,
+.blog-read-more:focus-visible {
+  color: var(--olive);
+  border-bottom-color: var(--gold);
+}
+
+.blog-modal-card {
+  width: min(860px, 100%);
+}
+
+.blog-modal-body {
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.9;
+}
+
+.blog-modal-body p {
+  margin: 0 0 1rem;
+}

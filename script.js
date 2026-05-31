@@ -236,3 +236,57 @@ if (coverflowSlides.length) {
 
   updateCoverflow();
 }
+
+// Blog cultural: abrir historias en ventana emergente
+const blogCards = document.querySelectorAll('.blog-card');
+const blogModal = document.getElementById('blogModal');
+const blogModalTitle = document.getElementById('blogModalTitle');
+const blogModalCategory = document.getElementById('blogModalCategory');
+const blogModalImage = document.getElementById('blogModalImage');
+const blogModalBody = document.getElementById('blogModalBody');
+let lastBlogFocus = null;
+
+function openBlogModal(card) {
+  if (!blogModal || !blogModalTitle || !blogModalCategory || !blogModalImage || !blogModalBody) return;
+  lastBlogFocus = document.activeElement;
+  blogModalTitle.textContent = card.dataset.blogTitle || '';
+  blogModalCategory.textContent = card.dataset.blogCategory || '';
+  blogModalImage.src = card.dataset.blogImage || '';
+  blogModalImage.alt = card.dataset.blogAlt || card.dataset.blogTitle || 'Imagen del blog cultural';
+  const paragraphs = (card.dataset.blogBody || '')
+    .split('\n\n')
+    .filter(Boolean)
+    .map((paragraph) => `<p>${paragraph}</p>`)
+    .join('');
+  blogModalBody.innerHTML = paragraphs;
+  blogModal.classList.add('open');
+  blogModal.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('modal-open');
+  blogModal.querySelector('.modal-close')?.focus();
+}
+
+function closeBlogModal() {
+  if (!blogModal) return;
+  blogModal.classList.remove('open');
+  blogModal.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('modal-open');
+  if (blogModalImage) blogModalImage.src = '';
+  if (lastBlogFocus) lastBlogFocus.focus();
+}
+
+blogCards.forEach((card) => {
+  const button = card.querySelector('.blog-read-more');
+  button?.addEventListener('click', () => openBlogModal(card));
+});
+
+blogModal?.addEventListener('click', (event) => {
+  if (event.target.matches('[data-close-blog-modal]')) {
+    closeBlogModal();
+  }
+});
+
+window.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && blogModal?.classList.contains('open')) {
+    closeBlogModal();
+  }
+});
